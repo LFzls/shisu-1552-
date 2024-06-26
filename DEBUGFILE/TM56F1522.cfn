@@ -1,0 +1,192 @@
+*GLOBAL_FILE:D:\资料\P2code\code\key.c
+ReadPort (null) 9 @160:FPLANE
+*GLOBAL_FILE:D:\资料\P2code\code\Func.h
+*GLOBAL_FILE:D:\资料\P2code\code\key.h
+*GLOBAL_FILE:D:\资料\P2code\code\LED.c
+RunEventLED (null) 4 43 0 {
+	}
+RunLED (null) 7 20 0 {
+	}
+D_LCD_Table const BYTE[20] 20 747
+*GLOBAL_FILE:D:\资料\P2code\code\LED.h
+*GLOBAL_FILE:D:\资料\P2code\code\main.c
+GetADC (null) 19 30 0 {
+	}
+LedsInfoFlag (null) 1 2C 0 {
+	}
+SysInfoFlag (null) 1 2D 0 {
+	}
+TimeCnt (null) 11 159 0 {
+	}
+VoutInfoFlag (null) 1 2E 0 {
+	}
+FlagSmoke UINT 2 @356:FPLANE
+szTemp const UINT 2 FFE
+*GLOBAL_FILE:D:\资料\P2code\code\modular.c
+D_BatVol_Table const UINT[101] 202 611
+RunPWM (null) 5 @39:FPLANE
+*GLOBAL_FILE:D:\资料\P2code\code\tenx_TM56F1522.h
+ADCDH BYTE 1 @23:FPLANE
+ADCTL BYTE 1 @24:FPLANE
+ADCTL2 BYTE 1 @25:FPLANE
+ADST bit 1 @24.3:FPLANE
+CLKCTL BYTE 1 @15:FPLANE
+CMPIF bit 1 @14.4:FPLANE
+INT0IF bit 1 @12.0:FPLANE
+INT1IF bit 1 @12.1:FPLANE
+INT2IF bit 1 @12.2:FPLANE
+INTIE BYTE 1 @11:FPLANE
+INTIE1 BYTE 1 @13:FPLANE
+LVCTL BYTE 1 @22:FPLANE
+LVDIE bit 1 @13.0:FPLANE
+LVDIF bit 1 @14.0:FPLANE
+OPTION BYTE 1 @129:FPLANE
+PAD BYTE 1 @5:FPLANE
+PAD2 bit 1 @5.2:FPLANE
+PAD3 bit 1 @5.3:FPLANE
+PAD4 bit 1 @5.4:FPLANE
+PAD6 bit 1 @5.6:FPLANE
+PAD7 bit 1 @5.7:FPLANE
+PAMOD10 BYTE 1 @133:FPLANE
+PAMOD32 BYTE 1 @134:FPLANE
+PAMOD54 BYTE 1 @135:FPLANE
+PAMOD76 BYTE 1 @136:FPLANE
+PBD BYTE 1 @6:FPLANE
+PBD0 bit 1 @6.0:FPLANE
+PBD2 bit 1 @6.2:FPLANE
+PBD3 bit 1 @6.3:FPLANE
+PBD4 bit 1 @6.4:FPLANE
+PBD5 bit 1 @6.5:FPLANE
+PBD6 bit 1 @6.6:FPLANE
+PBD7 bit 1 @6.7:FPLANE
+PBMOD10 BYTE 1 @140:FPLANE
+PBMOD32 BYTE 1 @141:FPLANE
+PBMOD54 BYTE 1 @142:FPLANE
+PBMOD76 BYTE 1 @143:FPLANE
+PDD BYTE 1 @7:FPLANE
+PDD0 bit 1 @7.0:FPLANE
+PDD1 bit 1 @7.1:FPLANE
+PDMOD10 BYTE 1 @144:FPLANE
+PINMOD BYTE 1 @261:FPLANE
+T2CTL BYTE 1 @21:FPLANE
+T2IE bit 1 @11.6:FPLANE
+T2IF bit 1 @12.6:FPLANE
+TM0 BYTE 1 @1:FPLANE
+TM0CTL BYTE 1 @17:FPLANE
+TM0IE bit 1 @11.4:FPLANE
+TM0IF bit 1 @12.4:FPLANE
+TM0RLD BYTE 1 @16:FPLANE
+TM1 BYTE 1 @18:FPLANE
+TM1CTL BYTE 1 @20:FPLANE
+TM1IE bit 1 @11.5:FPLANE
+TM1IF bit 1 @12.5:FPLANE
+TM1RLD BYTE 1 @19:FPLANE
+WKTIE bit 1 @11.3:FPLANE
+WKTIF bit 1 @12.3:FPLANE
+*GLOBAL_FILE:D:\资料\P2code\code\tyw_led.h
+*GLOBAL_FILE:D:\资料\P2code\code\tyw_led.c
+ledShowIndex const BYTE[18][3] 108 6DB
+led_duty_cycles BYTE[8][8] 64 @416:FPLANE
+led_duty_cycles_tmp BYTE[8] 8 @169:FPLANE
+*GLOBAL_FILE:D:\资料\P2code\code\init.c
+*GLOBAL_FILE:D:\资料\P2code\code\task.c
+*AUTO_FILE:D:\资料\P2code\code\key.c
+@KeyUpStopSmoke 3C0 3DE {
+}
+@PortScan 13 C1 {
+}
+@ReadChargerState 5B0 5EC {
+}
+@gearSwitch B64 BA2 {
+}
+*AUTO_FILE:D:\资料\P2code\code\Func.h
+*AUTO_FILE:D:\资料\P2code\code\key.h
+*AUTO_FILE:D:\资料\P2code\code\LED.c
+@ScanShowBatLxLED B26 B64 {
+}
+@SetOffNotifyLED 397 3A0 {
+}
+@SetShowBatLxLED 394 397 {
+ShowBatLx BYTE 1 47
+}
+@SetShowLED 393 394 {
+LED_color BYTE 1 FFFFFFFF
+}
+@SetWarnEvent 3A0 3B5 {
+EmRunEvent * 1 4A
+WarnEvent BYTE 1 47
+WarnShowCnt BYTE 1 49
+WarnShowTime BYTE 1 48
+}
+@ShowSegmentLED 32C 393 {
+ShowEvent BYTE 1 4A
+temp_seg0 BYTE 1 47
+temp_seg2 BYTE 1 48
+temp_seg3 BYTE 1 49
+}
+@ShowWarnLED 267 32C {
+}
+*AUTO_FILE:D:\资料\P2code\code\LED.h
+*AUTO_FILE:D:\资料\P2code\code\main.c
+@Interrupt_ISR 3DE 423 {
+}
+@main CCA DA6 {
+}
+*AUTO_FILE:D:\资料\P2code\code\modular.c
+@HAL_ADC_Sample F19 F83 {
+ADC_CHx BYTE 1 4B
+Filter BYTE 1 47
+Value UINT 2 53
+Value_Max UINT 2 51
+Value_Min UINT 2 4F
+Value_Sum UINT 2 4C
+i_max BYTE 1 4E
+}
+@ReadLoadRes EBA F19 {
+LoadValue UINT 2 64
+}
+@SmokeOut 423 44B {
+}
+@UpdateElectricityGrade DA6 EAD {
+temp_Percent BYTE 1 4C
+temp_TimeUp UINT 2 4A
+}
+*AUTO_FILE:D:\资料\P2code\code\tenx_TM56F1522.h
+*AUTO_FILE:D:\资料\P2code\code\tyw_led.h
+*AUTO_FILE:D:\资料\P2code\code\tyw_led.c
+@led_matrix_run 44B 4B4 {
+row BYTE 1 2F
+rowCount BYTE 1 79
+x BYTE 1 77
+y BYTE 1 78
+}
+@led_set_io_od 549 5A0 {
+io_num BYTE 1 70
+}
+@led_set_io_pp 4C2 549 {
+io_num BYTE 1 71
+type BYTE 1 70
+}
+*AUTO_FILE:D:\资料\P2code\code\init.c
+@ClearAllRAM 7D1 7F5 {
+}
+@Delay_16nop C5A C6B {
+}
+@InitGpio C6B C92 {
+}
+@Init_BOD_WDT C92 CAD {
+}
+@MCU_INIT_TIMER CAD CCA {
+}
+@SystemClockInit C31 C40 {
+}
+*AUTO_FILE:D:\资料\P2code\code\task.c
+@EnterSleep C40 C5A {
+}
+@IdleProgress C10 C31 {
+}
+@PlugProgress BA2 C0A {
+}
+@PowerProgress C1 267 {
+AD_Temp UINT 2 6A
+}

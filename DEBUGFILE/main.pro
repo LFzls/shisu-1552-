@@ -1,0 +1,2 @@
+extern ??? main(void);
+extern ??? interrupt ( Interrupt_ISR(void))(???);

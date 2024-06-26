@@ -1,0 +1,16 @@
+extern ??? * tyw_memset(??? *, unsigned char, unsigned char);
+extern ??? * tyw_memcpy(??? *, ??? const *, unsigned char);
+extern ??? led_matrix_run(void);
+extern ??? led_matrix_run2(void);
+extern ??? led_set_io_od(unsigned char);
+extern ??? led_set_io_pp(unsigned char, unsigned char);
+extern ??? led_show_clear(void);
+extern ??? led_show_set(void);
+extern ??? led_show_num(unsigned char, unsigned char);
+extern ??? led_show_power(unsigned char);
+extern ??? led_show_oil(unsigned char);
+extern ??? showSmokeMode(unsigned char);
+extern ??? led_all_test(void);
+extern ??? tyw_delay_ms(unsigned long long);
+extern ??? led_one_test(unsigned char, unsigned char);
+extern ??? gpio_test(void);

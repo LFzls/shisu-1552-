@@ -1,0 +1,22 @@
+Modules list:
+-------------
+TM56F1522.o:
+    CODE              Offs = 000000   Size = 000D20
+_DeclFuncExportName_1.o:
+
+
+Segment list:
+-------------
+Name                  Start   End     Size
+--------------------------------------------
+CODE                  000000  000FFF  001000
+
+
+Exports list:
+-------------
+
+
+
+Imports list:
+-------------
+

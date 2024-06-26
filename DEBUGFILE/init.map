@@ -1,0 +1,981 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
+  -h+DEBUGFILE\init.sym -z -Q16F883 -ol.obj \
+  -MD:\×ÊÁÏ\P2code\code\DEBUGFILE\init.map -E1 -p_szTemp_text=FFEh \
+  -ACONST=00h-0FFhx16 -ACODE=00h-07FFh,0800h-0FFDh,0FFEh-0FFFh \
+  -ASTRCODE=00h-0FFFh -AENTRY=00h-0FFhx16 -ASTRING=00h-0FFhx16 \
+  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
+  -ABANK3=01A0h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh \
+  -AABS1=020h-07Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh -ACOMMON=070h-07Fh \
+  -ASFR0=00h-01Fh -ASFR1=080h-09Fh -ASFR2=0100h-011Fh -ASFR3=0180h-019Fh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=01000h-01001h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=01002h-01005h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-07Fh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  DEBUGFILE\startup.obj DEBUGFILE\init.obj 
+
+Object code version is 3.10
+
+Machine type is 16F883
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+DEBUGFILE\startup.obj
+                end_init                             11       11        2        8       0
+                reset_vec                             0        0        2        0       0
+DEBUGFILE\init.obj
+                intentry                              4        4        D        8       0
+                swtext2                             810      810       10     1000       0
+                swtext1                             800      800       10     1000       0
+                text758                             3DE      3DE      1D2        8       0
+                text753                             7D1      7D1       24      EB8       0
+                text746                             B26      B26       3E     164C       0
+                text744                             DA6      DA6      114     1B4C       0
+                text741                             75C      75C       75      EB8       0
+                text739                             B64      B64       3E     16C8       0
+                text738                             5B0      5B0       42        8       0
+                text736                             BA2      BA2       6E     1744       0
+                text735                             EBA      EBA      144     1D74       0
+                text733                              13       13      3CB        8       0
+                text731                             C10      C10       BA     1820       0
+                maintext                            CCA      CCA       DC     1994       0
+                cstackBANK0                          47       47       25       20       1
+                cstackCOMMON                         70       70        E       70       1
+                clrtext                             7F5      7F5        8      EB8       0
+                bssBANK3                            1A0      1A0       40      1A0       1
+                bssBANK1                             A0       A0       11       A0       1
+                bssBANK0                             20       20       27       20       1
+                cinit                               B10      B10       16     1620       0
+                _szTemp_text                        FFE      FFE        2     1FFC       0
+                stringtext                          600      600      15C        C       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+                swtext2                             810      810       10         0
+                swtext1                             800      800       10         0
+
+        CLASS   CODE           
+                end_init                             11       11        2         0
+                intentry                              4        4        D         0
+                reset_vec                             0        0        2         0
+                text758                             3DE      3DE      1D2         0
+                text753                             7D1      7D1       24         0
+                text746                             B26      B26       3E         0
+                text744                             DA6      DA6      114         0
+                text741                             75C      75C       75         0
+                text739                             B64      B64       3E         0
+                text738                             5B0      5B0       42         0
+                text736                             BA2      BA2       6E         0
+                text735                             EBA      EBA      144         0
+                text733                              13       13      3CB         0
+                text731                             C10      C10       BA         0
+                maintext                            CCA      CCA       DC         0
+                clrtext                             7F5      7F5        8         0
+                cinit                               B10      B10       16         0
+                _szTemp_text                        FFE      FFE        2         0
+
+        CLASS   STRCODE        
+                stringtext                          600      600      15C         0
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   BANK0          
+                cstackBANK0                          47       47       25         1
+                bssBANK0                             20       20       27         1
+
+        CLASS   BANK1          
+                bssBANK1                             A0       A0       11         1
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+                bssBANK3                            1A0      1A0       40         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+                abs_s1                              159      159        D         1
+
+        CLASS   COMMON         
+                cstackCOMMON                         70       70        E         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  0005EE  0005F2         8       0  CODE        2
+                bssBANK0                       000020  00004C  00006C        20       1  BANK0       1
+                cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                bssBANK1                       0000A0  000011  0000B1        A0       1  BANK1       1
+                bssBANK3                       0001A0  000040  0001E0       1A0       1  BANK3       1
+                stringtext                     000600  00015C  00075C         C       0  STRCODE     2
+                text741                        00075C  0000A1  0007FD       EB8       0  CODE        2
+                swtext1                        000800  000020  000820      1000       0  CONST       2
+                cinit                          000B10  000016  000B26      1620       0  CODE        2
+                text746                        000B26  00003E  000B64      164C       0  CODE        2
+                text739                        000B64  00003E  000BA2      16C8       0  CODE        2
+                text736                        000BA2  00006E  000C10      1744       0  CODE        2
+                text731                        000C10  0000BA  000CCA      1820       0  CODE        2
+                maintext                       000CCA  0000DC  000DA6      1994       0  CODE        2
+                text744                        000DA6  000114  000EBA      1B4C       0  CODE        2
+                text735                        000EBA  000144  000FFE      1D74       0  CODE        2
+                _szTemp_text                   000FFE  000002  001000      1FFC       0  CODE        2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            006C-006F              4           1
+        BANK1            00B1-00EF             3F           1
+        BANK2            0120-0158             39           1
+                         0166-016F              A
+        BANK3            01E0-01EF             10           1
+        CODE             0002-0003              2           2
+                         05F2-05FF              E
+                         07FD-07FF              3
+                         0820-0B0F            2F0
+        CONFIG           1000-1001              2           2
+        CONST            0002-0003              2           2
+                         05F2-05FF              E
+                         07FD-07FF              3
+                         0820-0B0F            100
+        EEDATA           2100-217F             80           2
+        ENTRY            0002-0003              2           2
+                         05F2-05FF              E
+                         07FD-07FF              3
+                         0820-0B0F            100
+        IDLOC            1002-1005              4           2
+        RAM              006C-006F              4           1
+                         00B1-00EF             3F
+                         0120-0158             39
+                         0166-016F              A
+                         01E0-01EF             10
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-011F             20           1
+        SFR3             0180-019F             20           1
+        STRCODE          0002-0003              2           2
+                         05F2-05FF              E
+                         07FD-07FF              3
+                         0820-0B0F            2F0
+        STRING           0002-0003              2           2
+                         05F2-05FF              E
+                         07FD-07FF              3
+                         0820-0B0F            100
+
+                                  Symbol Table
+
+??_ClearAllRAM                      cstackBANK0  0047
+??_Delay_16nop                      cstackBANK0  0047
+??_EnterSleep                       cstackBANK0  0047
+??_HAL_ADC_Sample                   cstackBANK0  0049
+??_IdleProgress                     cstackBANK0  0047
+??_InitGpio                         cstackBANK0  0047
+??_Init_BOD_WDT                     cstackBANK0  0047
+??_Interrupt_ISR                    cstackCOMMON 007A
+??_KeyUpStopSmoke                   cstackBANK0  0047
+??_MCU_INIT_TIMER                   cstackBANK0  0047
+??_PlugProgress                     cstackBANK0  004B
+??_PortScan                         cstackBANK0  004B
+??_PowerProgress                    cstackBANK0  0066
+??_ReadChargerState                 cstackBANK0  004B
+??_ReadLoadRes                      cstackBANK0  0062
+??_ScanShowBatLxLED                 cstackBANK0  0047
+??_SetOffNotifyLED                  cstackBANK0  0047
+??_SetShowBatLxLED                  cstackBANK0  0047
+??_SetShowLED                       cstackBANK0  0047
+??_SetWarnEvent                     cstackBANK0  004A
+??_ShowSegmentLED                   cstackBANK0  0047
+??_ShowWarnLED                      cstackBANK0  004B
+??_SmokeOut                         cstackCOMMON 0070
+??_SystemClockInit                  cstackBANK0  0047
+??_UpdateElectricityGrade           cstackBANK0  0047
+??___aldiv                          cstackBANK0  004F
+??___bmul                           cstackCOMMON 0071
+??___lldiv                          cstackBANK0  005B
+??___lmul                           cstackBANK0  004F
+??_gearSwitch                       cstackBANK0  004B
+??_led_matrix_run                   cstackCOMMON 0073
+??_led_set_io_od                    cstackCOMMON 0070
+??_led_set_io_pp                    cstackCOMMON 0071
+??_main                             cstackBANK0  006C
+?_ClearAllRAM                       cstackCOMMON 0070
+?_Delay_16nop                       cstackCOMMON 0070
+?_EnterSleep                        cstackCOMMON 0070
+?_HAL_ADC_Sample                    cstackBANK0  0047
+?_IdleProgress                      cstackCOMMON 0070
+?_InitGpio                          cstackCOMMON 0070
+?_Init_BOD_WDT                      cstackCOMMON 0070
+?_Interrupt_ISR                     cstackCOMMON 0070
+?_KeyUpStopSmoke                    cstackCOMMON 0070
+?_MCU_INIT_TIMER                    cstackCOMMON 0070
+?_PlugProgress                      cstackCOMMON 0070
+?_PortScan                          cstackCOMMON 0070
+?_PowerProgress                     cstackCOMMON 0070
+?_ReadChargerState                  cstackCOMMON 0070
+?_ReadLoadRes                       cstackBANK0  0060
+?_ScanShowBatLxLED                  cstackCOMMON 0070
+?_SetOffNotifyLED                   cstackCOMMON 0070
+?_SetShowBatLxLED                   cstackCOMMON 0070
+?_SetShowLED                        cstackCOMMON 0070
+?_SetWarnEvent                      cstackBANK0  0047
+?_ShowSegmentLED                    cstackCOMMON 0070
+?_ShowWarnLED                       cstackCOMMON 0070
+?_SmokeOut                          cstackCOMMON 0070
+?_SystemClockInit                   cstackCOMMON 0070
+?_UpdateElectricityGrade            cstackCOMMON 0070
+?___aldiv                           cstackBANK0  0047
+?___bmul                            cstackCOMMON 0070
+?___lldiv                           cstackBANK0  0053
+?___lmul                            cstackBANK0  0047
+?_gearSwitch                        cstackCOMMON 0070
+?_led_matrix_run                    cstackCOMMON 0070
+?_led_set_io_od                     cstackCOMMON 0070
+?_led_set_io_pp                     cstackCOMMON 0070
+?_main                              cstackCOMMON 0070
+HAL_ADC_Sample@ADC_CHx              cstackBANK0  004B
+HAL_ADC_Sample@Filter               cstackBANK0  0047
+HAL_ADC_Sample@Value                cstackBANK0  0053
+HAL_ADC_Sample@Value_Max            cstackBANK0  0051
+HAL_ADC_Sample@Value_Min            cstackBANK0  004F
+HAL_ADC_Sample@Value_Sum            cstackBANK0  004C
+HAL_ADC_Sample@i_max                cstackBANK0  004E
+PowerProgress@AD_Temp               cstackBANK0  006A
+ReadLoadRes@LoadValue               cstackBANK0  0064
+SetShowBatLxLED@ShowBatLx           cstackBANK0  0047
+SetWarnEvent@EmRunEvent             cstackBANK0  004A
+SetWarnEvent@WarnEvent              cstackBANK0  0047
+SetWarnEvent@WarnShowCnt            cstackBANK0  0049
+SetWarnEvent@WarnShowTime           cstackBANK0  0048
+ShowSegmentLED@ShowEvent            cstackBANK0  004A
+ShowSegmentLED@temp_seg0            cstackBANK0  0047
+ShowSegmentLED@temp_seg2            cstackBANK0  0048
+ShowSegmentLED@temp_seg3            cstackBANK0  0049
+UpdateElectricityGrade@temp_Percent cstackBANK0  004C
+UpdateElectricityGrade@temp_TimeUp  cstackBANK0  004A
+_ADCDH                              (abs)        0017
+_ADCTL                              (abs)        0018
+_ADCTL2                             (abs)        0019
+_ADST                               (abs)        00C3
+_CLKCTL                             (abs)        000F
+_CMPIF                              (abs)        0074
+_ClearAllRAM                        text753      07D1
+_D_BatVol_Table                     stringtext   0612
+_D_LCD_Table                        stringtext   0748
+_Delay_16nop                        text731      0C5A
+_EnterSleep                         text731      0C40
+_FSR                                (abs)        0004
+_FlagSmoke                          (abs)        0164
+_GetADC                             bssBANK0     0030
+_HAL_ADC_Sample                     text735      0F19
+_INDF                               (abs)        0000
+_INT0IF                             (abs)        0060
+_INT1IF                             (abs)        0061
+_INT2IF                             (abs)        0062
+_INTIE                              (abs)        000B
+_INTIE1                             (abs)        000D
+_IRP                                (abs)        001F
+_IdleProgress                       text731      0C10
+_InitGpio                           text731      0C6B
+_Init_BOD_WDT                       text731      0C92
+_Interrupt_ISR                      text758      03DE
+_KeyUpStopSmoke                     text733      03C0
+_LVCTL                              (abs)        0016
+_LVDIE                              (abs)        0068
+_LVDIF                              (abs)        0070
+_LedsInfoFlag                       bssBANK0     002C
+_MCU_INIT_TIMER                     text731      0CAD
+_OPTION                             (abs)        0081
+_PAD                                (abs)        0005
+_PAD2                               (abs)        002A
+_PAD3                               (abs)        002B
+_PAD4                               (abs)        002C
+_PAD6                               (abs)        002E
+_PAD7                               (abs)        002F
+_PAMOD10                            (abs)        0085
+_PAMOD32                            (abs)        0086
+_PAMOD54                            (abs)        0087
+_PAMOD76                            (abs)        0088
+_PBD                                (abs)        0006
+_PBD0                               (abs)        0030
+_PBD2                               (abs)        0032
+_PBD3                               (abs)        0033
+_PBD4                               (abs)        0034
+_PBD5                               (abs)        0035
+_PBD6                               (abs)        0036
+_PBD7                               (abs)        0037
+_PBMOD10                            (abs)        008C
+_PBMOD32                            (abs)        008D
+_PBMOD54                            (abs)        008E
+_PBMOD76                            (abs)        008F
+_PDD                                (abs)        0007
+_PDD0                               (abs)        0038
+_PDD1                               (abs)        0039
+_PDMOD10                            (abs)        0090
+_PINMOD                             (abs)        0105
+_PlugProgress                       text736      0BA2
+_PortScan                           text733      0013
+_PowerProgress                      text733      00C1
+_RP0                                (abs)        001D
+_RP1                                (abs)        001E
+_ReadChargerState                   text738      05B0
+_ReadLoadRes                        text735      0EBA
+_ReadPort                           bssBANK1     00A0
+_RunEventLED                        bssBANK0     0043
+_RunLED                             bssBANK0     0020
+_RunPWM                             bssBANK0     0027
+_ScanShowBatLxLED                   text746      0B26
+_SetOffNotifyLED                    text733      0397
+_SetShowBatLxLED                    text733      0394
+_SetShowLED                         text733      0393
+_SetWarnEvent                       text733      03A0
+_ShowSegmentLED                     text733      032C
+_ShowWarnLED                        text733      0267
+_SmokeOut                           text758      0423
+_SysInfoFlag                        bssBANK0     002D
+_SystemClockInit                    text731      0C31
+_T2CTL                              (abs)        0015
+_T2IE                               (abs)        005E
+_T2IF                               (abs)        0066
+_TM0                                (abs)        0001
+_TM0CTL                             (abs)        0011
+_TM0IE                              (abs)        005C
+_TM0IF                              (abs)        0064
+_TM0RLD                             (abs)        0010
+_TM1                                (abs)        0012
+_TM1CTL                             (abs)        0014
+_TM1IE                              (abs)        005D
+_TM1IF                              (abs)        0065
+_TM1RLD                             (abs)        0013
+_TimeCnt                            (abs)        0159
+_UpdateElectricityGrade             text744      0DA6
+_VoutInfoFlag                       bssBANK0     002E
+_WKTIE                              (abs)        005B
+_WKTIF                              (abs)        0063
+__H_szTemp_text                     _szTemp_text 1000
+__Habs1                             abs1         0000
+__Hbank0                            bank0        0000
+__Hbank1                            bank1        0000
+__Hbank2                            bank2        0000
+__Hbank3                            bank3        0000
+__HbssBANK0                         bssBANK0     0000
+__HbssBANK1                         bssBANK1     0000
+__HbssBANK3                         bssBANK3     0000
+__Hcinit                            cinit        0000
+__Hclrtext                          clrtext      0000
+__Hcode                             code         0000
+__Hcommon                           common       0000
+__Hconfig                           config       0000
+__HcstackBANK0                      cstackBANK0  0000
+__HcstackCOMMON                     cstackCOMMON 0000
+__Heeprom_data                      eeprom_data  0000
+__Hend_init                         end_init     0013
+__Hfunctab                          functab      0000
+__Hidloc                            idloc        0000
+__Hinit                             init         0011
+__Hintentry                         intentry     0011
+__Hmaintext                         maintext     0000
+__Hpa_nodes                         pa_nodes     0000
+__Hpowerup                          powerup      0000
+__Hram                              ram          0000
+__Hreset_vec                        reset_vec    0002
+__Hsfr0                             sfr0         0000
+__Hsfr1                             sfr1         0000
+__Hsfr2                             sfr2         0000
+__Hsfr3                             sfr3         0000
+__Hstrings                          strings      0000
+__Hstringtext                       stringtext   0000
+__Htext                             text         0000
+__L_szTemp_text                     _szTemp_text 0FFE
+__Labs1                             abs1         0000
+__Lbank0                            bank0        0000
+__Lbank1                            bank1        0000
+__Lbank2                            bank2        0000
+__Lbank3                            bank3        0000
+__LbssBANK0                         bssBANK0     0000
+__LbssBANK1                         bssBANK1     0000
+__LbssBANK3                         bssBANK3     0000
+__Lcinit                            cinit        0000
+__Lclrtext                          clrtext      0000
+__Lcode                             code         0000
+__Lcommon                           common       0000
+__Lconfig                           config       0000
+__LcstackBANK0                      cstackBANK0  0000
+__LcstackCOMMON                     cstackCOMMON 0000
+__Leeprom_data                      eeprom_data  0000
+__Lend_init                         end_init     0011
+__Lfunctab                          functab      0000
+__Lidloc                            idloc        0000
+__Linit                             init         0011
+__Lintentry                         intentry     0004
+__Lmaintext                         maintext     0000
+__Lpa_nodes                         pa_nodes     0000
+__Lpowerup                          powerup      0000
+__Lram                              ram          0000
+__Lreset_vec                        reset_vec    0000
+__Lsfr0                             sfr0         0000
+__Lsfr1                             sfr1         0000
+__Lsfr2                             sfr2         0000
+__Lsfr3                             sfr3         0000
+__Lstrings                          strings      0000
+__Lstringtext                       stringtext   0000
+__Ltext                             text         0000
+__S0                                (abs)        0FFE
+__S1                                (abs)        01E0
+__S2                                (abs)        0000
+___aldiv                            text741      075C
+___aldiv@counter                    cstackBANK0  004F
+___aldiv@dividend                   cstackBANK0  004B
+___aldiv@divisor                    cstackBANK0  0047
+___aldiv@quotient                   cstackBANK0  0051
+___aldiv@sign                       cstackBANK0  0050
+___bmul                             text758      04B4
+___bmul@multiplicand                cstackCOMMON 0070
+___bmul@multiplier                  cstackCOMMON 0072
+___bmul@product                     cstackCOMMON 0071
+___lldiv                            text735      0FB6
+___lldiv@counter                    cstackBANK0  005F
+___lldiv@dividend                   cstackBANK0  0057
+___lldiv@divisor                    cstackBANK0  0053
+___lldiv@quotient                   cstackBANK0  005B
+___lmul                             text735      0F83
+___lmul@multiplicand                cstackBANK0  004B
+___lmul@multiplier                  cstackBANK0  0047
+___lmul@product                     cstackBANK0  004F
+__end_of_ClearAllRAM                text753      07F5
+__end_of_Delay_16nop                text731      0C6B
+__end_of_EnterSleep                 text731      0C5A
+__end_of_HAL_ADC_Sample             text735      0F83
+__end_of_IdleProgress               text731      0C31
+__end_of_InitGpio                   text731      0C92
+__end_of_Init_BOD_WDT               text731      0CAD
+__end_of_Interrupt_ISR              text758      0423
+__end_of_KeyUpStopSmoke             text733      03DE
+__end_of_MCU_INIT_TIMER             text731      0CCA
+__end_of_PlugProgress               text736      0C0A
+__end_of_PortScan                   text733      00C1
+__end_of_PowerProgress              text733      0267
+__end_of_ReadChargerState           text738      05EC
+__end_of_ReadLoadRes                text735      0F19
+__end_of_ScanShowBatLxLED           text746      0B64
+__end_of_SetOffNotifyLED            text733      03A0
+__end_of_SetShowBatLxLED            text733      0397
+__end_of_SetShowLED                 text733      0394
+__end_of_SetWarnEvent               text733      03B5
+__end_of_ShowSegmentLED             text733      0393
+__end_of_ShowWarnLED                text733      032C
+__end_of_SmokeOut                   text758      044B
+__end_of_SystemClockInit            text731      0C40
+__end_of_UpdateElectricityGrade     text744      0EAD
+__end_of___aldiv                    text741      07D1
+__end_of___bmul                     text758      04C2
+__end_of___lldiv                    text735      0FFE
+__end_of___lmul                     text735      0FB6
+__end_of_gearSwitch                 text739      0BA2
+__end_of_led_matrix_run             text758      04B4
+__end_of_led_set_io_od              text758      05A0
+__end_of_led_set_io_pp              text758      0549
+__end_of_main                       maintext     0DA6
+__p_szTemp_text                     _szTemp_text 0FFE
+__pbssBANK0                         bssBANK0     0020
+__pbssBANK1                         bssBANK1     00A0
+__pbssBANK3                         bssBANK3     01A0
+__pcstackBANK0                      cstackBANK0  0047
+__pcstackCOMMON                     cstackCOMMON 0070
+__pintentry                         intentry     0004
+__pmaintext                         maintext     0CCA
+__pstringtext                       stringtext   0600
+__pswtext1                          swtext1      0800
+__pswtext2                          swtext2      0810
+__ptext731                          text731      0C10
+__ptext732                          text733      00C1
+__ptext733                          text733      0013
+__ptext734                          text731      0C40
+__ptext735                          text735      0EBA
+__ptext736                          text736      0BA2
+__ptext737                          text733      0267
+__ptext738                          text738      05B0
+__ptext739                          text739      0B64
+__ptext740                          text731      0C31
+__ptext741                          text741      075C
+__ptext742                          text735      0FB6
+__ptext743                          text735      0F83
+__ptext744                          text744      0DA6
+__ptext745                          text735      0F19
+__ptext746                          text746      0B26
+__ptext747                          text733      03C0
+__ptext748                          text733      0394
+__ptext749                          text733      032C
+__ptext750                          text733      03A0
+__ptext751                          text733      0393
+__ptext752                          text733      0397
+__ptext753                          text753      07D1
+__ptext754                          text731      0CAD
+__ptext755                          text731      0C6B
+__ptext756                          text731      0C92
+__ptext757                          text731      0C5A
+__ptext758                          text758      03DE
+__ptext759                          text758      044B
+__ptext760                          text758      04B4
+__ptext761                          text758      04C2
+__ptext762                          text758      0549
+__ptext763                          text758      0423
+__ptext764                          text764      0000
+__size_of_ClearAllRAM               (abs)        0000
+__size_of_Delay_16nop               (abs)        0000
+__size_of_EnterSleep                (abs)        0000
+__size_of_HAL_ADC_Sample            (abs)        0000
+__size_of_IdleProgress              (abs)        0000
+__size_of_InitGpio                  (abs)        0000
+__size_of_Init_BOD_WDT              (abs)        0000
+__size_of_Interrupt_ISR             (abs)        0000
+__size_of_KeyUpStopSmoke            (abs)        0000
+__size_of_MCU_INIT_TIMER            (abs)        0000
+__size_of_PlugProgress              (abs)        0000
+__size_of_PortScan                  (abs)        0000
+__size_of_PowerProgress             (abs)        0000
+__size_of_ReadChargerState          (abs)        0000
+__size_of_ReadLoadRes               (abs)        0000
+__size_of_ScanShowBatLxLED          (abs)        0000
+__size_of_SetOffNotifyLED           (abs)        0000
+__size_of_SetShowBatLxLED           (abs)        0000
+__size_of_SetShowLED                (abs)        0000
+__size_of_SetWarnEvent              (abs)        0000
+__size_of_ShowSegmentLED            (abs)        0000
+__size_of_ShowWarnLED               (abs)        0000
+__size_of_SmokeOut                  (abs)        0000
+__size_of_SystemClockInit           (abs)        0000
+__size_of_UpdateElectricityGrade    (abs)        0000
+__size_of___aldiv                   (abs)        0000
+__size_of___bmul                    (abs)        0000
+__size_of___lldiv                   (abs)        0000
+__size_of___lmul                    (abs)        0000
+__size_of_gearSwitch                (abs)        0000
+__size_of_led_matrix_run            (abs)        0000
+__size_of_led_set_io_od             (abs)        0000
+__size_of_led_set_io_pp             (abs)        0000
+__size_of_main                      (abs)        0000
+_exit                               init         0011
+_gearSwitch                         text739      0B64
+_ledShowIndex                       stringtext   06DC
+_led_duty_cycles                    bssBANK3     01A0
+_led_duty_cycles_tmp                bssBANK1     00A9
+_led_matrix_run                     text758      044B
+_led_set_io_od                      text758      0549
+_led_set_io_pp                      text758      04C2
+_main                               maintext     0CCA
+_szTemp                             _szTemp_text 0FFE
+_szTemp_absaddr                     (abs)        0FFE
+btemp                               (abs)        007E
+clear_ram                           clrtext      07F5
+end_of_initialization               cinit        0B23
+i1l12936                                             
+i1l15590                                             
+i1l15606                                             
+i1l15610                                             
+i1l15614                                             
+i1l15630                                             
+i1l15638                                             
+i1l15640                                             
+i1l15654                                             
+i1l15660                                             
+i1l15664                                             
+i1l15668                                             
+i1l15672                                             
+i1l15674                                             
+i1l15676                                             
+i1l15678                                             
+i1l15682                                             
+i1l15686                                             
+i1l15700                                             
+i1l15702                                             
+i1l15704                                             
+i1l15706                                             
+i1l15708                                             
+i1l15710                                             
+i1l15712                                             
+i1l15714                                             
+i1l15716                                             
+i1l15726                                             
+i1l15730                                             
+i1l15732                                             
+i1l15736                                             
+i1l15738                                             
+i1l15742                                             
+i1l15744                                             
+i1l15748                                             
+i1l15750                                             
+i1l15754                                             
+i1l15756                                             
+i1l15760                                             
+i1l15762                                             
+i1l15766                                             
+i1l15768                                             
+i1l15772                                             
+i1l15774                                             
+i1l15784                                             
+i1l15792                                             
+i1l15794                                             
+i1l8465                                              
+interrupt_function                  intentry     0004
+intlevel0                           functab      0000
+intlevel1                           functab      0000
+intlevel2                           functab      0000
+intlevel3                           functab      0000
+intlevel4                           functab      0000
+intlevel5                           functab      0000
+l13017                                               
+l13213                                               
+l13239                                               
+l15220                                               
+l15222                                               
+l15224                                               
+l15226                                               
+l15228                                               
+l15230                                               
+l15232                                               
+l15234                                               
+l15236                                               
+l15238                                               
+l15240                                               
+l15242                                               
+l15244                                               
+l15246                                               
+l15248                                               
+l15252                                               
+l15254                                               
+l15256                                               
+l15258                                               
+l15260                                               
+l15262                                               
+l15264                                               
+l15266                                               
+l15268                                               
+l15270                                               
+l15272                                               
+l15274                                               
+l15276                                               
+l15278                                               
+l15280                                               
+l15282                                               
+l15288                                               
+l15290                                               
+l15298                                               
+l15300                                               
+l15302                                               
+l15308                                               
+l15310                                               
+l15312                                               
+l15314                                               
+l15316                                               
+l15318                                               
+l15320                                               
+l15322                                               
+l15328                                               
+l15342                                               
+l15362                                               
+l15364                                               
+l15368                                               
+l15372                                               
+l15374                                               
+l15376                                               
+l15378                                               
+l15380                                               
+l15382                                               
+l15384                                               
+l15386                                               
+l15388                                               
+l15390                                               
+l15392                                               
+l15394                                               
+l15396                                               
+l15400                                               
+l15420                                               
+l15428                                               
+l15430                                               
+l15432                                               
+l15434                                               
+l15436                                               
+l15438                                               
+l15440                                               
+l15446                                               
+l15448                                               
+l15454                                               
+l15456                                               
+l15462                                               
+l15464                                               
+l15470                                               
+l15482                                               
+l15484                                               
+l15490                                               
+l15492                                               
+l15514                                               
+l15520                                               
+l15524                                               
+l15536                                               
+l15540                                               
+l15556                                               
+l15564                                               
+l15574                                               
+l15576                                               
+l15816                                               
+l15822                                               
+l15828                                               
+l15830                                               
+l15840                                               
+l15844                                               
+l15848                                               
+l15854                                               
+l15856                                               
+l15862                                               
+l15866                                               
+l15876                                               
+l15880                                               
+l15884                                               
+l15888                                               
+l15894                                               
+l15896                                               
+l15898                                               
+l15900                                               
+l15902                                               
+l15904                                               
+l15906                                               
+l1591                                                
+l15916                                               
+l15924                                               
+l15926                                               
+l15932                                               
+l15934                                               
+l15936                                               
+l15938                                               
+l1594                                                
+l15940                                               
+l15946                                               
+l15950                                               
+l15952                                               
+l15958                                               
+l15960                                               
+l15962                                               
+l15964                                               
+l15966                                               
+l1597                                                
+l15972                                               
+l15976                                               
+l15980                                               
+l15982                                               
+l15990                                               
+l15992                                               
+l15998                                               
+l1600                                                
+l16000                                               
+l16002                                               
+l16008                                               
+l16012                                               
+l16014                                               
+l16026                                               
+l16028                                               
+l1603                                                
+l16032                                               
+l16034                                               
+l16038                                               
+l16040                                               
+l16048                                               
+l16050                                               
+l16056                                               
+l16082                                               
+l16084                                               
+l16088                                               
+l16094                                               
+l16096                                               
+l16098                                               
+l16116                                               
+l1612                                                
+l16128                                               
+l16130                                               
+l16132                                               
+l16134                                               
+l16136                                               
+l16138                                               
+l16148                                               
+l16150                                               
+l16152                                               
+l16154                                               
+l16156                                               
+l16158                                               
+l16160                                               
+l16162                                               
+l16164                                               
+l16178                                               
+l16184                                               
+l16186                                               
+l16188                                               
+l16190                                               
+l16192                                               
+l16194                                               
+l16196                                               
+l16198                                               
+l16200                                               
+l16210                                               
+l16218                                               
+l16220                                               
+l16222                                               
+l16224                                               
+l16242                                               
+l16244                                               
+l16248                                               
+l16250                                               
+l16256                                               
+l16266                                               
+l16272                                               
+l16274                                               
+l16276                                               
+l16278                                               
+l16280                                               
+l16290                                               
+l16292                                               
+l16294                                               
+l16296                                               
+l16298                                               
+l16300                                               
+l16302                                               
+l16306                                               
+l16308                                               
+l16310                                               
+l16312                                               
+l16314                                               
+l16316                                               
+l16324                                               
+l16328                                               
+l16338                                               
+l16342                                               
+l16344                                               
+l16346                                               
+l16348                                               
+l16350                                               
+l16352                                               
+l16354                                               
+l16358                                               
+l16360                                               
+l16362                                               
+l16364                                               
+l16366                                               
+l16370                                               
+l16374                                               
+l16378                                               
+l16380                                               
+l16382                                               
+l16386                                               
+l16388                                               
+l16390                                               
+l16392                                               
+l16394                                               
+l16398                                               
+l16402                                               
+l16410                                               
+l16412                                               
+l16416                                               
+l16418                                               
+l16420                                               
+l16422                                               
+l16424                                               
+l16426                                               
+l16428                                               
+l16434                                               
+l16448                                               
+l16450                                               
+l16452                                               
+l16454                                               
+l16456                                               
+l16458                                               
+l16460                                               
+l16468                                               
+l16470                                               
+l16472                                               
+l16474                                               
+l16476                                               
+l16484                                               
+l16486                                               
+l16488                                               
+l16490                                               
+l16492                                               
+l16496                                               
+l16532                                               
+l16534                                               
+l16536                                               
+l16538                                               
+l16540                                               
+l16542                                               
+l16546                                               
+l16550                                               
+l16552                                               
+l16554                                               
+l16556                                               
+l16558                                               
+l16560                                               
+l16568                                               
+l16572                                               
+l16576                                               
+l16578                                               
+l16580                                               
+l16582                                               
+l16584                                               
+l16586                                               
+l16588                                               
+l16592                                               
+l16594                                               
+l16596                                               
+l16604                                               
+l16606                                               
+l16610                                               
+l16612                                               
+l16614                                               
+l16616                                               
+l16618                                               
+l16624                                               
+l16626                                               
+l16628                                               
+l16642                                               
+l16654                                               
+l16658                                               
+l4910                                                
+l4913                                                
+l4916                                                
+l4919                                                
+l4989                                                
+l8404                                                
+l8452                                                
+led_matrix_run@row                  bssBANK0     002F
+led_matrix_run@rowCount             cstackCOMMON 0079
+led_matrix_run@x                    cstackCOMMON 0077
+led_matrix_run@y                    cstackCOMMON 0078
+led_set_io_od@io_num                cstackCOMMON 0070
+led_set_io_pp@io_num                cstackCOMMON 0071
+led_set_io_pp@type                  cstackCOMMON 0070
+reset_vec                           reset_vec    0000
+saved_w                             (abs)        007E
+start                               init         0011
+start_initialization                cinit        0B10
+u4400                                                
+wtemp0                              (abs)        007E

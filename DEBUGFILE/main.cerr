@@ -1,0 +1,25 @@
+E:\workSpace\git_work\jm\P2\code\tyw_led.c(646):(col=1): Warning (361): function declared implicit int
+E:\workSpace\git_work\jm\P2\code\tyw_led.c(269):(col=): Warning (1090): variable "_numberIndex" is not used
+E:\workSpace\git_work\jm\P2\code\tyw_led.c(255):(col=): Warning (1090): variable "_font" is not used
+E:\workSpace\git_work\jm\P2\code\LED.c(23):(col=): Warning (1090): variable "_Com1SegLED" is not used
+E:\workSpace\git_work\jm\P2\code\LED.c(24):(col=): Warning (1090): variable "_Com2SegLED" is not used
+E:\workSpace\git_work\jm\P2\code\LED.c(25):(col=): Warning (1090): variable "_Com3SegLED" is not used
+E:\workSpace\git_work\jm\P2\code\LED.c(26):(col=): Warning (1090): variable "_Com4SegLED" is not used
+E:\workSpace\git_work\jm\P2\code\LED.c(46):(col=): Warning (1090): variable "_LED_color" is not used
+
+Memory Summary:
+    Program space        used   CDFh (  3295) of  1000h words   ( 80.4%)
+    Data space           used    B8h (   184) of   150h bytes   ( 54.8%)
+    EEPROM space         used     0h (     0) of    80h bytes   (  0.0%)
+    Configuration bits   used     0h (     0) of     2h words   (  0.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+
+Compilation stage times:
+Preprocessor               0.24
+Parser                     0.33
+Code generator             4.50
+Assembler                  0.20
+Linker                     0.08
+Output file conversion     0.11
+Cross reference            0.04
+TOTAL                      5.51 secs
